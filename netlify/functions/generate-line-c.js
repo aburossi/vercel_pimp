@@ -16,7 +16,7 @@ exports.handler = async (event) => {
     const userGoals = body.user_goals || '';
     const userNotes = body.user_notes || '';
     const temperature = body.temperature || 0.45;
-    const maxTokens = body.max_tokens || 2048;
+    const maxTokens = body.max_tokens || 20048;
 
     const systemPrompt = process.env.SYSTEM_PROMPT_C || '';
     const apiKey = process.env.GEMINI_API_KEY;
