@@ -1,4 +1,6 @@
+# FILE: netlify.toml
 [functions]
   directory = "netlify/functions"
   node_bundler = "esbuild"
-  external_node_modules = ["@google/generative-ai", "aws-sdk"]
+  external_node_modules = ["@google/generative-ai"]
+  included_files = ["chapters/**"]
